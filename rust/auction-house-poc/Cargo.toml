@@ -1,0 +1,15 @@
+[package]
+name = "auction-house-poc"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+poc-framework = "0.1.2"
+spl-token = { version = "3.2",  features = ["no-entrypoint"] }
+spl-associated-token-account = {version = "1.0.3", features = ["no-entrypoint"]}
+metaplex-token-metadata = {  version = "0.0.1", features = ["no-entrypoint"] }
+metaplex-auction-house = { path = "../auction-house", features = ["no-entrypoint"] }
+solana-program = "1.8.0"
+anchor-lang = "0.18.0"
